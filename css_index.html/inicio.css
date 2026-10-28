@@ -1,0 +1,204 @@
+/* Ruta: C:\xampp\htdocs\HTML\css_index.html\inicio.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #ededed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* ---------- Barra superior ---------- */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #1a1020;
+    color: #fff;
+}
+
+.topbar .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.topbar .brand img {
+    height: 48px;
+}
+
+.topbar a {
+    color: #ffd54f;
+    text-decoration: none;
+}
+
+/* ---------- Contenedor general ---------- */
+.contenedor {
+    display: flex;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin: 0 0 18px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card h2 a {
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #3483fa;
+    text-decoration: none;
+}
+
+/* ---------- Oferta del día ---------- */
+.oferta-dia {
+    flex: 0 0 380px;
+}
+
+.oferta-dia .imagen {
+    height: 300px;
+}
+
+/* ---------- Carrusel de ofertas ---------- */
+.ofertas {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+}
+
+.carrusel {
+    display: flex;
+    gap: 22px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+.producto {
+    flex: 0 0 220px;
+}
+
+/* ---------- Piezas de cada producto ---------- */
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    margin-bottom: 18px;
+    background: #f3f3f3;
+    font-size: 70px;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nombre {
+    margin: 0 0 10px;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #333;
+}
+
+.precio-antes {
+    font-size: 13px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.precio-fila {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.precio {
+    font-size: 28px;
+    color: #333;
+}
+
+.descuento {
+    padding: 2px 5px;
+    background: #00a650;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.cuotas {
+    margin: 4px 0 8px;
+    font-size: 13px;
+    color: #00a650;
+}
+
+.envio {
+    font-size: 13px;
+    font-weight: bold;
+    color: #00a650;
+}
+
+.envio span {
+    font-weight: normal;
+    color: #999;
+}
+
+/* ---------- Botón flecha ---------- */
+.flecha {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #3483fa;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.flecha:hover {
+    background: #f5f5f5;
+}
+
+/* ---------- Pantallas pequeñas ---------- */
+@media (max-width: 900px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .oferta-dia {
+        flex: none;
+    }
+
+    .flecha {
+        right: 5px;
+    }
+}

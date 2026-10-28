@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GamerGear Hub - Inicio</title>
+    <link rel="stylesheet" href="css_index.html/inicio.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <header class="topbar">
+        <div class="brand">
+            <img src="imagenes/logo.png" alt="GamerGear Hub">
+            GamerGear Hub
+        </div>
+        <a href="login.html">Cerrar sesión</a>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- Oferta del día -->
+        <section class="card oferta-dia">
+            <h2>Oferta del día</h2>
+
+            <!-- Para poner tu foto: <div class="imagen"><img src="imagenes/silla.jpg" alt="Silla gamer"></div> -->
+            <div class="imagen">🪑</div>
+
+            <p class="nombre">Silla Gamer Ergonómica Reclinable con Cojines Lumbares</p>
+            <div class="precio-antes">$ 1.200.000</div>
+            <div class="precio-fila">
+                <span class="precio">$ 599.900</span>
+                <span class="descuento">50% OFF</span>
+            </div>
+            <div class="cuotas">12 cuotas de $ 49.992 con 0% interés</div>
+            <div class="envio">Envío gratis <span>por ser tu primera compra</span></div>
+        </section>
+
+        <!-- Ofertas (carrusel) -->
+        <section class="card ofertas">
+            <h2>Ofertas <a href="#">Mostrar todas las ofertas</a></h2>
+
+            <div class="carrusel" id="carrusel">
+
+                <article class="producto">
+                    <div class="imagen">🎧</div>
+                    <p class="nombre">Audífonos Gamer RGB con Micrófono Cancelación de Ruido</p>
+                    <div class="precio-antes">$ 180.000</div>
+                    <div class="precio-fila">
+                        <span class="precio">$ 89.900</span>
+                        <span class="descuento">50% OFF</span>
+                    </div>
+                    <div class="cuotas">3 cuotas de $ 29.967 con 0% interés</div>
+                    <div class="envio">Envío gratis <span>por ser tu primera compra</span></div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen">⌨️</div>
+                    <p class="nombre">Teclado Mecánico RGB 60% Switch Rojo</p>
+                    <div class="precio-antes">$ 250.000</div>
+                    <div class="precio-fila">
+                        <span class="precio">$ 139.900</span>
+                        <span class="descuento">44% OFF</span>
+                    </div>
+                    <div class="cuotas">3 cuotas de $ 46.633 con 0% interés</div>
+                    <div class="envio">Envío gratis <span>por ser tu primera compra</span></div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen">🖱️</div>
+                    <p class="nombre">Mouse Gamer 12000 DPI Inalámbrico</p>
+                    <div class="precio-antes">$ 120.000</div>
+                    <div class="precio-fila">
+                        <span class="precio">$ 59.900</span>
+                        <span class="descuento">50% OFF</span>
+                    </div>
+                    <div class="cuotas">3 cuotas de $ 19.967 con 0% interés</div>
+                    <div class="envio">Envío gratis <span>por ser tu primera compra</span></div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen">🖥️</div>
+                    <p class="nombre">Monitor Gamer 24" Full HD 144Hz</p>
+                    <div class="precio-antes">$ 900.000</div>
+                    <div class="precio-fila">
+                        <span class="precio">$ 549.900</span>
+                        <span class="descuento">39% OFF</span>
+                    </div>
+                    <div class="cuotas">6 cuotas de $ 91.650 con 0% interés</div>
+                    <div class="envio">Envío gratis <span>por ser tu primera compra</span></div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen">🎮</div>
+                    <p class="nombre">Control Gamepad Inalámbrico para PC y Consola</p>
+                    <div class="precio-antes">$ 150.000</div>
+                    <div class="precio-fila">
+                        <span class="precio">$ 99.900</span>
+                        <span class="descuento">33% OFF</span>
+                    </div>
+                    <div class="cuotas">3 cuotas de $ 33.300 con 0% interés</div>
+                    <div class="envio">Envío gratis <span>por ser tu primera compra</span></div>
+                </article>
+
+            </div>
+
+            <button class="flecha" id="flecha" type="button" aria-label="Siguiente">&#10095;</button>
+        </section>
+
+    </main>
+
+    <script>
+        // La flecha desplaza el carrusel hacia la derecha
+        var carrusel = document.getElementById("carrusel");
+        document.getElementById("flecha").onclick = function () {
+            carrusel.scrollBy({ left: 480, behavior: "smooth" });
+        };
+    </script>
+
+</body>
+</html>

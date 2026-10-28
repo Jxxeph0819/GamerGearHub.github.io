@@ -1,0 +1,81 @@
+/* Ruta: C:\xampp\htdocs\HTML\css_index.html\c.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../imagenes/fondo_minecraft.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #1a1020; /* color de respaldo mientras carga el GIF */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-box {
+    width: 340px;
+    max-width: 90%;
+    padding: 25px 30px;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.login-box .logo {
+    width: 110px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.login-box h1 {
+    margin: 10px 0 20px;
+}
+
+.login-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.login-box input,
+.login-box select {
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.login-box a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #ffd54f;
+}
+
+.login-box button {
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #ff9800;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #e68900;
+}
